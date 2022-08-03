@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" > 
+  </main>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <div class="container">
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+        </div>
+        <div class="container">
+        <label id="last-name-label">Last name<input id="last-name-label" type="text" placeholder="Enter your last name" required/></label>
+        </div>
+        <div class="container">
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required/></label>
+        </div>
+        <div class="container">
+        <label id="number-label">Age<input id="number" type="number"min="10"  max="99" placeholder="Age" required/></label>
+        </div>
+        <div class="container">
+        <label>Level of schooling
+          <select id="dropdown">
+            <option value="0">(Select your level of schooling)</option>
+            <option value="1">Elementary School</option>
+            <option value="2">Middle School</option>
+            <option value="3">High School</option>
+            <option value="4">Univertisty</option>
+          </select>
+        </label>
+        </div>
+        <div class="container">
+        <label>Are you satisfied with the knowledge you have acquired?</label>
+        <label ><input type="radio" name="satisfied-level" class="inline" value="satisfied" checked/>Satisfied</label>
+        <label><input type="radio" name="satisfied-level" class="inline" value="neutral"/>Neutral</label>
+        <label><input type="radio" name="satisfied-level" class="inline" value="not-satisfied"/>Not at all satisfied</label>
+        </div>
+        <div class="container">¿What do you think you missed?
+          <label><input type="checkbox" name="missed" value="need" class="inline"/>More exercises</label>
+          <label><input type="checkbox" name="missed" value="need" class="inline"/>better explanations</label>
+          <label><input type="checkbox" name="missed" value="need" class="inline"/>examples</label>
+          <label><input type="checkbox" name="missed" value="need" class="inline"/>videos</label>
+        </div>
+        <label>Additional comments
+          <textarea name="comment" row="10" cols="30" placeholder="i love this program"></textarea>
+        </label>
+      </fieldset>
+      <input value="Submit" type="submit" id="submit"/>
+    </form>
+  <body>
+</html>
